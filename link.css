@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/img2.jpg);
+    color: white;
+    padding: 10px 8%;
+    position: relative;
+    /* margin: 10px; */
+    background-size: cover;
+}
+
+ .container{
+    background: rgb(58, 58, 58);
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.container nav img:hover{
+    cursor: pointer;
+}
+nav div button{
+    padding: 7px 20px;
+    border: none;
+    outline: none;
+    margin: 10px;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+nav div button:hover{
+    margin: 12px;
+    background: #2e2c2c;
+    font-size: 14px;
+}
+.content-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin-top: 100px;
+    transform: translate(-50%,-50%);
+}
+.content-1 h2{
+    /* width: 500px;
+    display: flex;
+    /* padding: 90px; */
+    /* height: 300px; */ 
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+    
+}
+.content-1 P{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.content-1 h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.content-1 form{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+}
+
+.content-1 form input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+.content-1 form button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    justify-content: space-between;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+.content-1 form button:hover{
+    font-size: 18px;
+    background: rgb(253, 3, 3);
+}
+.section{
+    /* display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50vh;
+    margin: 5px 0;
+  padding: 20px 80px;
+  position: relative;*/
+  color:white; 
+    background: black;
+    padding: 50px 12%;
+    font-size: 22px;
+    margin-top: 10px;
+
+}
+.section1{
+  width: 100%;
+  /* height: 300px;
+ margin-right: 20px;
+ margin-left: 0;
+  position: relative; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.section1 .content-2{
+    /* padding: 20px;
+    margin: 0 10px; */
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.section1 .image-2{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    /* font-size: 5px;
+    line-height: 35px; */
+    /* margin-top: 20px; */
+    /* padding-right: 200px; */
+}
+.image-2 img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.section1 .content-2 h4{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+} 
+footer{
+    color: white;
+    background: black;
+}
+
+
+
+
+.faq{
+    padding: 10px 12%;
+    font-size: 18px;
+    text-align: center;
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 34px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordian .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s , padding 0.5s;
+}
+.accordian input[type="radio"]:checked + label  + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
